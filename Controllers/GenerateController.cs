@@ -9,17 +9,6 @@ namespace QRasta.Controllers;
 [Route("[controller]")]
 public class GenerateController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
-    private readonly ILogger<GenerateController> _logger;
-
-    public GenerateController(ILogger<GenerateController> logger)
-    {
-        _logger = logger;
-    }
 
     [HttpGet()]
     public async Task<IActionResult> Get(string Url, [Range(3,15)] int ppm = 5)

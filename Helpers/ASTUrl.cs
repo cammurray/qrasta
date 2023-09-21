@@ -58,6 +58,10 @@ public class ASTUrl
         _Url = URL;
     }
 
+    /// <summary>
+    /// Determine if URL is valid AST URL
+    /// </summary>
+    /// <returns></returns>
     public bool IsValid()
     {
         
