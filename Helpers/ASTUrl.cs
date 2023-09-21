@@ -60,9 +60,10 @@ public class ASTUrl
 
     public bool IsValid()
     {
-
+        
         Uri uri;
 
+        // Determine if URI is valid absolute URL
         if (!Uri.TryCreate(_Url, UriKind.Absolute, out uri))
             return false;
         
